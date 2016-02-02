@@ -1,0 +1,21 @@
+name: ReportPE
+version: 1.0.0
+author: applqpak
+api: [1.0.0]
+main: ReportPE\Main
+commands:
+  report:
+    description: Report A Problem!
+    usage: "/report < problem >"
+    aliases: [rpt, r]
+    permission: reportpe.command.report
+  reports:
+    description: Check User Reports!
+    usage: "/reports"
+    aliases: [rpts]
+    permission: reportpe.command.reports
+permissions:
+  reportpe.command.report:
+    default: true
+  reportpe.command.reports:
+    default: op
